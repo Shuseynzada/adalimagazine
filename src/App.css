@@ -16,8 +16,12 @@ body{
   align-items: center;
 }
 
+#title {
+  font-size: 2em;
+}
+
 #icons{
-  font-size: 20px;
+  font-size: 1.5em;
   
 }
 #face:hover{
@@ -35,4 +39,26 @@ body{
 #mail:hover{
   color:rgb(111, 111, 225);
 
+}
+
+nav{
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  height: 2.5em;
+  align-items: center;
+}
+
+nav select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+}
+
+nav select:hover{
+  background-color: aqua;
 }

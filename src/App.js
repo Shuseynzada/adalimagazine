@@ -10,7 +10,7 @@ function App() {
           <ion-icon id="youtube" name="logo-youtube"></ion-icon>
           <ion-icon id="mail" name="mail-outline"></ion-icon>
         </div>
-        <div>
+        <div id="title">
           ADALI MAGAZINE
         </div>
         <div>
@@ -19,11 +19,17 @@ function App() {
       </div>
       <div>
         <nav id= "nav-bar">
-          <div>HOME</div>
-          <div>CATEGORIES</div>
-          <div>MAGAZINE</div>
-          <div>GALLERY</div>
-          <div>CONTACT US</div>
+          <select>
+            <option>Home</option>
+            <option>Home</option>
+            <option>Home</option>
+          </select>
+          <select>
+            <option>Categories</option>
+          </select>
+          <select>MAGAZINE</select>
+          <select>GALLERY</select>
+          <select>CONTACT US</select>
         </nav>
       </div>
     </div>
