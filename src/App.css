@@ -47,9 +47,10 @@ nav{
   justify-content: center;
   height: 2.5em;
   align-items: center;
+  border: none;
 }
 
-nav select{
+nav select, nav div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,4 +62,11 @@ nav select{
 
 nav select:hover{
   background-color: aqua;
+}
+
+footer{
+  position: absolute;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
 }

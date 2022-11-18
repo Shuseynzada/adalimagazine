@@ -3,6 +3,15 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <div id="Topsection">
       <div id='header'>
         <div id='icons'>
           <ion-icon id="face" name="logo-facebook"></ion-icon>
@@ -18,7 +27,7 @@ function App() {
         </div>
       </div>
       <div>
-        <nav id= "nav-bar">
+        <nav id="nav-bar">
           <select>
             <option>Home</option>
             <option>Home</option>
@@ -27,13 +36,25 @@ function App() {
           <select>
             <option>Categories</option>
           </select>
-          <select>MAGAZINE</select>
-          <select>GALLERY</select>
-          <select>CONTACT US</select>
+          <div>MAGAZINE</div>
+          <select>
+            <option>GALLERY</option>
+          </select>
+          <select>
+            <option>CONTACT US</option>
+          </select>
         </nav>
       </div>
     </div>
-  );
+  )
+}
+
+function Footer(){
+  return(
+    <footer>
+      Hello
+    </footer>
+  )
 }
 
 export default App;
