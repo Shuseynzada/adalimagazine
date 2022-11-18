@@ -28,21 +28,11 @@ function Header() {
       </div>
       <div>
         <nav id="nav-bar">
-          <select>
-            <option>Home</option>
-            <option>Home</option>
-            <option>Home</option>
-          </select>
-          <select>
-            <option>Categories</option>
-          </select>
-          <div>MAGAZINE</div>
-          <select>
-            <option>GALLERY</option>
-          </select>
-          <select>
-            <option>CONTACT US</option>
-          </select>
+          <Dropdown title ="Home"/>
+          <Dropdown title ="Categories"/>
+          <Dropdown title ="Magazine" notList={1}/>
+          <Dropdown title ="Gallery"/>
+          <Dropdown title ="Contact US"/>
         </nav>
       </div>
     </div>
@@ -56,5 +46,18 @@ function Footer(){
     </footer>
   )
 }
+
+function Dropdown(props){
+  
+  return(
+    <div className="dropdown">
+      <div className="title">
+        <a>{props.title.toUpperCase()}</a>
+        {(!props.notList)?<ion-icon name="chevron-down-outline"></ion-icon>:<></>}
+      </div>  
+    </div>
+  )
+}
+
 
 export default App;
