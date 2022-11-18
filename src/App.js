@@ -28,34 +28,66 @@ function Header() {
       </div>
       <div>
         <nav id="nav-bar">
-          <Dropdown title ="Home"/>
-          <Dropdown title ="Categories"/>
-          <Dropdown title ="Magazine" notList={1}/>
-          <Dropdown title ="Gallery"/>
-          <Dropdown title ="Contact US"/>
+          <div className="dropdown">
+            <div className="title">
+              <a>Home</a>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div className='list'>
+              <div><a>EDITOR'S BOARD</a></div>
+              <div><a>EDITORIAL BAORD</a></div>
+              <div><a>ADA</a></div>
+            </div>
+          </div>
+          <div className="dropdown">
+            <div className="title">
+              <a>Categories</a>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div className='list'>
+              <div><a>EDITOR'S BOARD</a></div>
+              <div><a>EDITORIAL BAORD</a></div>
+              <div><a>ADA</a></div>
+            </div>
+          </div>
+          <div className="dropdown">
+            <div className="title">
+              <a>MAGAZINE</a>
+            </div>
+          </div>
+          <div className="dropdown">
+            <div className="title">
+              <a>GALLERY</a>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div className='list'>
+              <div><a>EDITOR'S BOARD</a></div>
+              <div><a>EDITORIAL BAORD</a></div>
+              <div><a>ADA</a></div>
+            </div>
+          </div>
+          <div className="dropdown">
+            <div className="title">
+              <a>CONTACT US</a>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div className='list'>
+              <div><a>EDITOR'S BOARD</a></div>
+              <div><a>EDITORIAL BAORD</a></div>
+              <div><a>ADA</a></div>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
   )
 }
 
-function Footer(){
-  return(
+function Footer() {
+  return (
     <footer>
       Hello
     </footer>
-  )
-}
-
-function Dropdown(props){
-  
-  return(
-    <div className="dropdown">
-      <div className="title">
-        <a>{props.title.toUpperCase()}</a>
-        {(!props.notList)?<ion-icon name="chevron-down-outline"></ion-icon>:<></>}
-      </div>  
-    </div>
   )
 }
 

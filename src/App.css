@@ -50,7 +50,7 @@ nav{
   border: none;
 }
 
-.dropdown{ 
+.dropdown{
 }
 
 .dropdown .title{
@@ -67,6 +67,26 @@ nav{
   background-color: aqua;
   color: black;
 }
+.dropdown .list{
+  position: absolute;
+  display: none;
+  width: 10em;
+}
+.dropdown .list div{
+  padding: 1em;
+  border-bottom: 0.01px solid black;
+}
+
+.dropdown .title:hover + .list{
+  display: block;
+}
+.dropdown .title + .list:hover{
+  display: block;
+}
+.dropdown .title + .list div:hover{
+  background-color: aqua;
+}
+
 
 footer{
   position: absolute;
