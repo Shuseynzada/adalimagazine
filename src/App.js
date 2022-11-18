@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <Home /> */}
       <Footer />
     </div>
   );
@@ -68,10 +69,11 @@ function Header() {
           </div>
           <div className="dropdown">
             <div className="title">
-              <a>CONTACT US</a>
+              <a>ABOUT US</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
             </div>
             <div className='list'>
+              <div><a>TEAM MEMBERS</a></div>
               <div><a>EDITOR'S BOARD</a></div>
               <div><a>EDITORIAL BAORD</a></div>
               <div><a>ADA</a></div>
@@ -85,9 +87,55 @@ function Header() {
 
 function Footer() {
   return (
-    <footer>
-      Hello
+    <footer id="footer">
+      <div>
+        <h3>CONTACT US</h3>
+        <hr/>
+        <a>E-mail: adalimagazine@ada.edu.az</a>
+        <a>Web: www.ada.edu.az/en</a>
+        <br/>
+        <h5>Web Developers</h5>
+        <br/>
+        <a>ehajiyev16259@ada.edu.az</a>
+        <a>shuseynzada16232@ada.edu.az</a>
+      </div>
+      <div>
+        <h3>ABOUT US</h3>
+      </div>
     </footer>
+  )
+}
+
+function Home() {
+  return (
+    <>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="..." alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide" />
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </>
   )
 }
 

@@ -51,6 +51,7 @@ nav{
 }
 
 .dropdown{
+  height: 100%;
 }
 
 .dropdown .title{
@@ -60,17 +61,19 @@ nav{
   height: 100%;
   width: 100%;
   line-height: 100%;
-  padding: 1em 1em;
   transition: 200ms;
+  padding: 0 0.75em;
 }
 .dropdown .title:hover{
   background-color: aqua;
   color: black;
 }
+
 .dropdown .list{
   position: absolute;
   display: none;
   width: 10em;
+  border:1px solid black;
 }
 .dropdown .list div{
   padding: 1em;
@@ -88,9 +91,29 @@ nav{
 }
 
 
-footer{
+#footer{
   position: absolute;
   background-color: black;
   bottom: 0;
   width: 100%;
+  padding: 2em;
+  display: flex;
+}
+#footer div{
+  padding: 1em;
+  width: 50%;
+}
+
+#footer hr {
+  border:1px solid white;
+}
+
+#footer h5 {
+  color: blue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#footer a{
+  display: block;
+  color: white;
 }
