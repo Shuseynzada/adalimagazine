@@ -16,7 +16,7 @@ function Header() {
       <div id='header'>
         <div id='icons'>
           <ion-icon id="face" name="logo-facebook" lazy="True"></ion-icon>
-          <ion-icon id="insta" name="logo-instagram"></ion-icon>
+          <a href="https://www.instagram.com/adalimagazine/" target="_blank"><ion-icon id="insta" name="logo-instagram"></ion-icon></a>
           <ion-icon id="youtube" name="logo-youtube"></ion-icon>
           <ion-icon id="mail" name="mail-outline"></ion-icon>
         </div>
@@ -103,7 +103,7 @@ function Footer() {
         <h3>FOLLOW US</h3>
         <div id="icons">
           <ion-icon id="face" name="logo-facebook"></ion-icon>
-          <ion-icon id="insta" name="logo-instagram"></ion-icon>
+           <ion-icon id="insta" name="logo-instagram"></ion-icon>
           <ion-icon id="youtube" name="logo-youtube"></ion-icon>
           <ion-icon id="mail" name="mail-outline"></ion-icon>
         </div>
