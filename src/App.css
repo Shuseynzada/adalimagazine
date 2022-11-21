@@ -5,11 +5,6 @@
 }
 body{
   overflow-x:hidden;
-  height: 100em;
-}
-
-#root{
-  position: relative;
 }
 
 .App{
@@ -24,7 +19,6 @@ body{
   height: 10em;
   background-color:azure;
   align-items: center;
-  width: 100%;
 }
 
 #title {
@@ -52,15 +46,13 @@ body{
 
 }
 
-#nav-bar{
+nav{
   display: flex;
   background-color: black;
   justify-content: center;
   height: 2.5em;
   align-items: center;
-  position: relative;
-  width: 100%;
-  z-index: 2;
+  border: none;
 }
 
 .dropdown{
@@ -105,6 +97,7 @@ body{
 
 
 #footer{
+  position: absolute;
   background-color: black;
   bottom: 0;
   width: 100%;
