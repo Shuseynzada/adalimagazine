@@ -12,6 +12,11 @@ body{
   position: relative;
 }
 
+.App{
+  position: relative;
+}
+
+
 #header{
   padding:0 2%;
   display: flex;
