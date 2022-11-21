@@ -100,10 +100,13 @@ function Footer() {
         <a>ehajiyev16259@ada.edu.az</a>
         <a>shuseynzada16232@ada.edu.az</a>
         <hr/>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-youtube"></ion-icon>
-        <ion-icon name="mail-outline"></ion-icon>
+        <h3>FOLLOW US</h3>
+        <div id="icons">
+          <ion-icon id="face" name="logo-facebook"></ion-icon>
+          <ion-icon id="insta" name="logo-instagram"></ion-icon>
+          <ion-icon id="youtube" name="logo-youtube"></ion-icon>
+          <ion-icon id="mail" name="mail-outline"></ion-icon>
+        </div>
       </div>
       <div className='aboutus'>
         <h3>ABOUT US</h3>
