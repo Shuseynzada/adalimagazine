@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Home /> */}
-      {/* <Footer /> */}
+      <Home />
+      <Footer />
     </div>
   );
 }
@@ -15,7 +15,7 @@ function Header() {
     <div id="Topsection">
       <div id='header'>
         <div id='icons'>
-          <ion-icon id="face" name="logo-facebook"></ion-icon>
+          <ion-icon id="face" name="logo-facebook" lazy="True"></ion-icon>
           <ion-icon id="insta" name="logo-instagram"></ion-icon>
           <ion-icon id="youtube" name="logo-youtube"></ion-icon>
           <ion-icon id="mail" name="mail-outline"></ion-icon>
@@ -105,8 +105,9 @@ function Footer() {
         <ion-icon name="logo-youtube"></ion-icon>
         <ion-icon name="mail-outline"></ion-icon>
       </div>
-      <div>
+      <div className='aboutus'>
         <h3>ABOUT US</h3>
+        <span>ADA University</span>
       </div>
     </footer>
   )
@@ -114,7 +115,7 @@ function Footer() {
 
 function Home() {
   return (
-    <>
+    <div className="main">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -123,13 +124,13 @@ function Home() {
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="..." alt="First slide" />
+            <img class="d-block w-100" src="./imgs/a.jpg" alt="First slide" />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide" />
+            <img class="d-block w-100" src="./imgs/a.jpg" alt="First slide" />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide" />
+            <img class="d-block w-100" src="./imgs/a.jpg" alt="First slide" />
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -141,9 +142,29 @@ function Home() {
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </>
+      <div className='home-card-section'>
+        <Card title="Ada School at teknofest 2022"/>
+        <Card title="Ada School at teknofest 2022"/>
+        <Card title="Ada School at teknofest 2022"/>
+        <Card title="Ada School at teknofest 2022"/>
+        <Card title="Ada School at teknofest 2022"/>
+      </div>
+    </div>
   )
 }
 
+function Card(props){
+  return(
+    <div className='card'>
+      <img src='./imgs/b.jpg'/>
+      <div className='card--info'>
+        <h5>{props.title.toUpperCase()}</h5>
+        <span className='date'>July 13, 2022 ///No Comments</span>
+        <p>From May 26 to May 29,2022 ADA School students participated at the TEKNOFEST, the international Aviation, Space, and Technology Festival which was held in Baku</p>
+        <a href="...">Read More ≫</a>
+      </div>
+    </div>
+  )
+}
 
 export default App;
