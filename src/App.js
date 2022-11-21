@@ -27,60 +27,58 @@ function Header() {
           <ion-icon name="search-outline"></ion-icon>
         </div>
       </div>
-      <div>
-        <nav id="nav-bar">
-          <div className="dropdown">
-            <div className="title">
-              <a>Home</a>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div className='list'>
-              <div><a>EDITOR'S BOARD</a></div>
-              <div><a>EDITORIAL BAORD</a></div>
-              <div><a>ADA</a></div>
-            </div>
+      <nav id="nav-bar">
+        <div className="dropdown">
+          <div className="title">
+            <a>Home</a>
+            <ion-icon name="chevron-down-outline"></ion-icon>
           </div>
-          <div className="dropdown">
-            <div className="title">
-              <a>Categories</a>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div className='list'>
-              <div><a>EDITOR'S BOARD</a></div>
-              <div><a>EDITORIAL BAORD</a></div>
-              <div><a>ADA</a></div>
-            </div>
+          <div className='list'>
+            <div><a>EDITOR'S BOARD</a></div>
+            <div><a>EDITORIAL BOARD</a></div>
+            <div><a>ADA</a></div>
           </div>
-          <div className="dropdown">
-            <div className="title">
-              <a>MAGAZINE</a>
-            </div>
+        </div>
+        <div className="dropdown">
+          <div className="title">
+            <a>Categories</a>
+            <ion-icon name="chevron-down-outline"></ion-icon>
           </div>
-          <div className="dropdown">
-            <div className="title">
-              <a>GALLERY</a>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div className='list'>
-              <div><a>EDITOR'S BOARD</a></div>
-              <div><a>EDITORIAL BAORD</a></div>
-              <div><a>ADA</a></div>
-            </div>
+          <div className='list'>
+            <div><a>EDITOR'S BOARD</a></div>
+            <div><a>EDITORIAL BAORD</a></div>
+            <div><a>ADA</a></div>
           </div>
-          <div className="dropdown">
-            <div className="title">
-              <a>ABOUT US</a>
-              <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div className='list'>
-              <div><a>TEAM MEMBERS</a></div>
-              <div><a>EDITOR'S BOARD</a></div>
-              <div><a>EDITORIAL BAORD</a></div>
-              <div><a>ADA</a></div>
-            </div>
+        </div>
+        <div className="dropdown">
+          <div className="title">
+            <a>MAGAZINE</a>
           </div>
-        </nav>
-      </div>
+        </div>
+        <div className="dropdown">
+          <div className="title">
+            <a>GALLERY</a>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div className='list'>
+            <div><a>EDITOR'S BOARD</a></div>
+            <div><a>EDITORIAL BAORD</a></div>
+            <div><a>ADA</a></div>
+          </div>
+        </div>
+        <div className="dropdown">
+          <div className="title">
+            <a>ABOUT US</a>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+          <div className='list'>
+            <div><a>TEAM MEMBERS</a></div>
+            <div><a>EDITOR'S BOARD</a></div>
+            <div><a>EDITORIAL BAORD</a></div>
+            <div><a>ADA</a></div>
+          </div>
+        </div>
+      </nav>
     </div>
   )
 }
@@ -95,9 +93,17 @@ function Footer() {
         <a>Web: www.ada.edu.az/en</a>
         <br/>
         <h5>Web Developers</h5>
+        <a>shuseynzada16232@ada.edu.az</a>
+        <a>ehajiyev16259@ada.edu.az</a>
         <br/>
+        <h5>Content Managers</h5>
         <a>ehajiyev16259@ada.edu.az</a>
         <a>shuseynzada16232@ada.edu.az</a>
+        <hr/>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="mail-outline"></ion-icon>
       </div>
       <div>
         <h3>ABOUT US</h3>
